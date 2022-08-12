@@ -4,7 +4,6 @@ from kivy.lang import Builder
 from kivy.uix.boxlayout import BoxLayout
 from kivy.app import App
 
-
 Builder.load_file("main.kv")
 
 class Proef(BoxLayout):
