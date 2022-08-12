@@ -1,0 +1,23 @@
+<Proef>:
+
+	BoxLayout:
+		orientation: "vertical"
+
+		Image:
+			id:_plaatje
+			source:"tree.jpg"
+
+		Label:
+			id:_comment
+			text:"Dit is de eerste picture"
+			size_hint:(.25,.1)
+			pos_hint:{"center_x":.5, "center_y":0.01}
+
+		Button:
+			text:"verander Plaatje"
+			size_hint:(.25,.1)
+			pos_hint:{"center_x":.5, "center_y":0.5}
+			on_press:
+				_comment.text="En dit is het tweede plaatje"
+				_plaatje.source="Wolf in bos.jpg"
+
